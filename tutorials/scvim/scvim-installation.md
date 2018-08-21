@@ -261,9 +261,19 @@ simple: `$<num>`
 
 ### Creating a startup script
 
-We can make our SuperCollider / VIM setup even more comfortable by adding a
-startup script that takes care of opening vim inside of tmux, starting SCLang
-and creating or opening a SuperCollider file.
+*(Note: A prerequisite for this is having [Tmux](https://github.com/tmux/tmux) installed. To install tmux on mac using the [Brew package manager](http://brew.sh), run `brew install tmux`.)*
+
+Opening up Vim, creating a SuperCollider file, typing the `:SClangStart` command
+and then having the interpreter window float somewhere by itself can be tedious 
+though. Having a slow setup process can sometimes kill an immediate idea or take
+a bit of energy away when you decide to code.
+
+To make up for this, we can make a startup script that handles all of this for
+us. The goal is to just have one command - `scvim` – in the terminal start up Vim,
+SuperCollider and have everything ready to make noise within a few seconds.
+
+We can do this easily in a bash script: 
+
 
 ```
 #!/bin/bash
@@ -294,7 +304,6 @@ SESSION=${SESSION:-"SuperCollider"}
 # First argument of the script is a path to a file
 # If the argument is nil, it will create a new file
 # in your standard directory defined in SCDIR
-
 if [ -z "$1" ]; 
     then
     # If there is no command line argument passed
@@ -312,6 +321,23 @@ $TMUX attach-session -t $SESSION || $TMUX \
     send-keys -t 0 "vim $FILE -R" C-m   \; \
     send-keys ":SClangStart" C-m \;
 ```
+
+To use the script, either create a file named `scvim_startup_script.sh` and
+paste the above code into it and save it or [download it from this repo](scvim_startup_script.sh). 
+Put it somewhere you won't delete it or move it, for example in your user directory: `cd ~ && wget https://github.com/madskjeldgaard/talks-tutorials-workshops/tree/master/tutorials/scvim/scvim_startup_script.sh`
+
+You can test the script by executing `bash scvim_startup_script.sh` and
+optionally adding the extra argument for a preexisting file you want to edit,
+otherwise it will automatically make a new one with the name of the current date.
+
+So, this is nice. It should work nicely as it is, but we still need to make it
+accessible anyhwere on the system by calling `scvim`. We can do this by editing
+our `.bash_profile`, `.bashrc` (or `.zshrc` if using oh-my-zsh).
+
+Open up the file in vim like so: `vim ~/.bash_profile` and add the following line to the
+bottom of the file before saving and quitting: `alias scvim="bash ~/scvim_startup_script.sh"`
+
+Then close down your terminal, restart it to reload the .bash_profile and type `scvim` to start the script.
 
 ### Recommended plugins
 
