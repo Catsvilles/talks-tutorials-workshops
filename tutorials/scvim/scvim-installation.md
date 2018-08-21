@@ -1,4 +1,3 @@
-
 # SuperCollider tutorial: Set up VIM as a SuperCollider IDE
 
 VIM is an extremely popular text editor. And frankly, it's amazing what you can do with it.
@@ -250,6 +249,8 @@ endsnippet
 
 Now, in a SuperCollider file type `pb` and hit tab and then hit tab again to
 scroll through the arguments of the Pbind. 
+
+![snippets.gif](snippets.gif)
 
 Jumping through your snippet using the tab key is easily achieved by
 encapsulating whatever you want to focus on like so `${<num>: <someCode> }` where
