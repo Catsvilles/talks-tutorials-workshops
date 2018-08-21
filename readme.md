@@ -1,4 +1,4 @@
-# SuperCollider tutorials, talks and workshop material 
+# Tutorials, talks and workshop material 
 
 Here you will find the code, manuscripts and material for my tutorials, talks
 and workshops.
