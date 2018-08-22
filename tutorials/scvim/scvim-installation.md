@@ -369,7 +369,7 @@ Add the following line somewhere:
 `au Filetype supercollider nnoremap <leader>0 :call SendToSC('100.do{"Hi My Name Is Mads :))) ".post}')<CR>`
 
 This piece of code will map the vim function we just made to the keystrokes
-`<leader>0` where <leader> – if you followed my advice above about the .vimrc –
+`<leader>0` where `<leader>` – if you followed my advice above about the .vimrc –
 is `,`. 
 
 This small piece of code can be broken down into smaller parts to better
