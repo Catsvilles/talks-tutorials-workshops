@@ -393,6 +393,7 @@ Some of my favourites are:
 * [nerdtree](https://github.com/scrooloose/nerdtree)
 * [Command-T](https://github.com/wincent/command-t)
 * [vim-commentary](https://github.com/tpope/vim-commentary)
+* [vim-surround](https://github.com/tpope/vim-surround)
 * [vim-tidal (if you're using Tidal) ](https://github.com/munshkr/vim-tidal)
 
 ### Making the terminal a more pleasant experience
