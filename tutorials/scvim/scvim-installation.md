@@ -263,6 +263,8 @@ simple: `$<num>`
 
 *(Note: A prerequisite for this is having [Tmux](https://github.com/tmux/tmux) installed. To install tmux on mac using the [Brew package manager](http://brew.sh), run `brew install tmux`.)*
 
+![startupscript.gif](startupscript.gif)
+
 Opening up Vim, creating a SuperCollider file, typing the `:SClangStart` command
 and then having the interpreter window float somewhere by itself can be tedious 
 though. Having a slow setup process can sometimes kill an immediate idea or take
@@ -324,7 +326,7 @@ $TMUX attach-session -t $SESSION || $TMUX \
 
 To use the script, either create a file named `scvim_startup_script.sh` and
 paste the above code into it and save it or [download it from this repo](scvim_startup_script.sh). 
-Put it somewhere you won't delete it or move it, for example in your user directory: `cd ~ && wget https://github.com/madskjeldgaard/talks-tutorials-workshops/tree/master/tutorials/scvim/scvim_startup_script.sh`
+Put it somewhere you won't delete it or move it, for example in your user directory: `cd ~ && wget https://raw.githubusercontent.com/madskjeldgaard/talks-tutorials-workshops/master/tutorials/scvim/scvim_startup_script.sh`
 
 You can test the script by executing `bash scvim_startup_script.sh` and
 optionally adding the extra argument for a preexisting file you want to edit,
