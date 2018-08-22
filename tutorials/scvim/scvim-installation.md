@@ -345,6 +345,45 @@ bottom of the file before saving and quitting: `alias scvim="bash ~/scvim_startu
 
 Then close down your terminal, restart it to reload the .bash_profile and type `scvim` to start the script.
 
+### Hack: Map SuperCollider code to key strokes
+
+One of SCVim's core VIM functions is `SendToSC()`. This is used behind the
+scenes for a lot of things in SCVIM but it is actually available globally which
+means we can use it to do fun hacks, such as mapping SuperCollider code to
+certain keystrokes.
+
+`SendToSC()` takes a string as an argument and sends the string to the SuperCollider
+interpreter to be executed. The string can be any valid SuperCollider code. 
+
+Try opening up a supercollider file, start the interpreter and then execute the following command from the vim command line: `:call SendToSC('100.do{"Hi My Name Is Mads :))) ".post}')`
+
+You should see the string "Hy My Name Is Mads :))) " posted to the interpreter 100 times. 
+
+Let's map this function to some keystrokes so that we can easily call it
+whenever we want.
+
+Open up your .vimrc: `:tabnew $MYVIMRC`.
+
+Add the following line somewhere:
+
+`au Filetype supercollider nnoremap <leader>0 :call SendToSC('100.do{"Hi My Name Is Mads :))) ".post}')<CR>`
+
+This piece of code will map the vim function we just made to the keystrokes
+`<leader>0` where <leader> – if you followed my advice above about the .vimrc –
+is `,`. 
+
+This small piece of code can be broken down into smaller parts to better
+understand what's going on:  `au Filetype supercollider` means this remapping will only work in supercollider files. `nnoremap <leader>0`
+means we are remapping the keystrokes `<leader>0` but only in normal mode
+(that's the first n in `nnoremap`). And then the function the call to the
+function we just made followed by `<CR>` which is the carriage return / enter
+button on your keyboard.
+
+Now, save your .vimrc file and reload it by executing `:source $MYVIMRC` or
+close and reopen vim. 
+
+Now, press `<leader>0` to introduce yourself to the audience.
+
 ### Recommended plugins
 
 Some of my favourites are:
