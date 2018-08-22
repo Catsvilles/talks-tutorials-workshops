@@ -100,10 +100,14 @@ in normal/insert mode:
 * F6 to execute the current line of code
 * F12 is a hard stop
 
-Commands
+SuperCollider Commands
 * Starting SuperCollider from within vim:
 `:SClangStart`
 * Kill SClang: `:SClangKill`
+
+Other good commands
+
+* `:vsplit <filename>` – edit <filename> in a window split
 
 ### Add colors and turn on syntax highlighting
 
