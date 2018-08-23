@@ -62,7 +62,7 @@
 (
 
     // For something that works better in ProxySpace / live coding situations
-    /* p = ProxySpace.push(s); */
+    p = ProxySpace.push(s);
 
     // This will automatically create a bus and map it accordingly in the Pbind
     // Try changing each node proxy and listen to the pattern change
