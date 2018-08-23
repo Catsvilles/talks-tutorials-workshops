@@ -50,7 +50,7 @@
 
 // 3. Even more flexible: ProxySpace + BenoitLib
 
-// Using the Pkr pattern: https://github.com/cappelnord/BenoitLib
+// Using the Pkr pattern from BenoitLib. Download it and install from here: https://github.com/cappelnord/BenoitLib
 // This method is great if you want to be able to do binary operations inside of
 // the patterns
 (
