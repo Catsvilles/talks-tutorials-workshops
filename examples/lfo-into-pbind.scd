@@ -1,3 +1,8 @@
+// Example: Two ways of controlling Pbind parameters with LFO's 
+// Be careful when using this on the \dur parameter though. If it crosses or
+// equals zero, things go apeshit so make sure it doesn't do that.
+
+// 1. 
 (
 
     // Here's one way of controlling patterns using LFO's/synths
@@ -22,6 +27,7 @@
 
 )
 
+// 2. For livecode situations
 (
 
     // For something that works better in ProxySpace / live coding situations
