@@ -1,4 +1,4 @@
-// Example: Two ways of controlling Pbind parameters with LFO's 
+// Example: Three ways of controlling Pbind parameters with LFO's 
 // Be careful when using this on the \dur parameter though. If it crosses or
 // equals zero, things go apeshit so make sure it doesn't do that.
 
@@ -27,7 +27,7 @@
 
 )
 
-// 2. For livecode situations
+// 2. ProxySpace example. Pretty flexible 
 (
 
     // For something that works better in ProxySpace / live coding situations
@@ -35,6 +35,8 @@
 
     // This will automatically create a bus and map it accordingly in the Pbind
     // Try changing each node proxy and listen to the pattern change
+    // You still have to do all operations to the lfo's data inside of the
+    // nodeproxies
     ~lfo1 = {SinOsc.kr(0.1)};
     ~lfo2 = {Saw.kr(11.1, 500, 100)};
 
@@ -44,5 +46,26 @@
         \dur, 0.25
     ).play;
     
-    // Also, check out BenoitLib's Pkr pattern: https://github.com/cappelnord/BenoitLib
+)
+
+// 3. Even more flexible: ProxySpace + BenoitLib
+
+// Using the Pkr pattern: https://github.com/cappelnord/BenoitLib
+// This method is great if you want to be able to do binary operations inside of
+// the patterns
+(
+
+    // For something that works better in ProxySpace / live coding situations
+    p = ProxySpace.push(s);
+
+    // This will automatically create a bus and map it accordingly in the Pbind
+    // Try changing each node proxy and listen to the pattern change
+    ~lfo1 = {SinOsc.kr(0.1)};
+    ~lfo2 = {Saw.kr(11.1, 100, 100)};
+
+    ~pattern = Pbind(
+        \freq, Pkr(~lfo2) * 10, // Now you can do binary operations inside of the Pbind making Pkr quite flexible
+        \amp, Pkr(~lfo1), 
+        \dur, 0.125 + (Pkr(~lfo1)/10)
+    ).play;
 )
