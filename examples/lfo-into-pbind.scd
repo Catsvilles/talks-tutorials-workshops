@@ -30,7 +30,8 @@
 // 2. ProxySpace example. Pretty flexible 
 
 // This works like plugging a midi controller into each synth, making the lfo
-// sound smooth between note events
+// sound smooth between note events and being able to keep changing once the
+// note event has started
 (
 
     // For something that works better in ProxySpace / live coding situations
@@ -57,7 +58,7 @@
 // This method is great if you want to be able to do binary operations inside of
 // the patterns
 
-// This samples the lfo at each note event and doesn't sound as smooth as example 2
+// This works a bit like a sample and hold, sampling the lfo at each note event 
 (
 
     // For something that works better in ProxySpace / live coding situations
