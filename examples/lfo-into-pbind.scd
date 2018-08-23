@@ -1,4 +1,7 @@
 (
+
+    // Here's one way of controlling patterns using LFO's/synths
+
     // Make a bus to funnel the lfo's output into the pattern
     var lfo1 = Bus.control(s,1);
     var lfo2 = Bus.control(s,1);
@@ -17,4 +20,23 @@
         \dur, 0.25
     ).play;
 
+)
+
+(
+
+    // For something that works better in ProxySpace / live coding situations
+    p = ProxySpace.push(s);
+
+    // This will automatically create a bus and map it accordingly in the Pbind
+    // Try changing each node proxy and listen to the pattern change
+    ~lfo1 = {SinOsc.kr(0.1)};
+    ~lfo2 = {Saw.kr(11.1, 500, 100)};
+
+    ~pattern = Pbind(
+        \freq, ~lfo2,
+        \amp, ~lfo1, 
+        \dur, 0.25
+    ).play;
+    
+    // Also, check out BenoitLib's Pkr pattern: https://github.com/cappelnord/BenoitLib
 )
