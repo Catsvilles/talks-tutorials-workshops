@@ -28,6 +28,9 @@
 )
 
 // 2. ProxySpace example. Pretty flexible 
+
+// This works like plugging a midi controller into each synth, making the lfo
+// sound smooth between note events
 (
 
     // For something that works better in ProxySpace / live coding situations
@@ -53,15 +56,17 @@
 // Using the Pkr pattern from BenoitLib. Download it and install from here: https://github.com/cappelnord/BenoitLib
 // This method is great if you want to be able to do binary operations inside of
 // the patterns
+
+// This samples the lfo at each note event and doesn't sound as smooth as example 2
 (
 
     // For something that works better in ProxySpace / live coding situations
-    p = ProxySpace.push(s);
+    /* p = ProxySpace.push(s); */
 
     // This will automatically create a bus and map it accordingly in the Pbind
     // Try changing each node proxy and listen to the pattern change
     ~lfo1 = {SinOsc.kr(0.1)};
-    ~lfo2 = {Saw.kr(11.1, 100, 100)};
+    ~lfo2 = {Saw.kr(111.1, 100, 100)};
 
     ~pattern = Pbind(
         \freq, Pkr(~lfo2) * 10, // Now you can do binary operations inside of the Pbind making Pkr quite flexible
