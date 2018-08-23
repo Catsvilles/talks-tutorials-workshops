@@ -1,6 +1,14 @@
-// Example: Three ways of controlling Pbind parameters with LFO's 
-// Be careful when using this on the \dur parameter though. If it crosses or
-// equals zero, things go apeshit so make sure it doesn't do that.
+/*
+
+LFO TO PBIND
+
+Example: Three ways of controlling Pbind parameters with LFO's 
+
+
+Be careful when using this on the \dur parameter though. If it crosses or
+equals zero, things go apeshit so make sure it doesn't do that.
+
+*/
 
 // 1. 
 (
@@ -34,7 +42,7 @@
 // note event has started
 (
 
-    // For something that works better in ProxySpace / live coding situations
+    // Start ProxySpace to allow live coding
     p = ProxySpace.push(s);
 
     // This will automatically create a bus and map it accordingly in the Pbind
@@ -61,7 +69,7 @@
 // This works a bit like a sample and hold, sampling the lfo at each note event 
 (
 
-    // For something that works better in ProxySpace / live coding situations
+    // Start ProxySpace to allow live coding
     p = ProxySpace.push(s);
 
     // This will automatically create a bus and map it accordingly in the Pbind
