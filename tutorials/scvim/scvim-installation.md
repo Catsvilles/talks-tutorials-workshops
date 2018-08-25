@@ -40,6 +40,8 @@ execute `vim ~/.vimrc` and add the following line: `execute pathogen#infect()`. 
 ### Install SCVIM
 Now it's time to install the [SCVIM](https://github.com/supercollider/scvim) plugin to add support for SuperCollider in VIM.
 
+Note, [Arch Linux users: Having Ruby installed is a prerequisite](https://www.listarc.bham.ac.uk/lists/sc-users/msg61966.html)
+
 `cd ~/.vim/bundle && git clone https://github.com/supercollider/scvim`
 
 A problem when installing SCVim is that it comes with a very important SuperCollider class file called `SCVim.sc`. But it's stowed away in the vim plugin folder where SuperCollider doesn't look for class files.
