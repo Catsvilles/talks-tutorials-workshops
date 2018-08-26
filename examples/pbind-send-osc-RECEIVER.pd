@@ -1,0 +1,21 @@
+#N canvas 304 22 796 547 10;
+#X obj 35 95 import mrpeach;
+#X obj 35 181 unpackOSC;
+#X obj 35 148 udpreceive 7000;
+#X obj 35 211 routeOSC /supercollider;
+#X obj 35 243 routeOSC /silentPattern /boringPiano;
+#X obj 171 273 print boring piano;
+#X obj 35 273 print silent pattern;
+#X text 143 93 import the objects needed for OSC;
+#X text 146 150 listen on port 7000;
+#X text 191 212 let messages pass if they start with /supercollider
+;
+#X text 279 244 split the stream according to the patterns in SC;
+#X text 32 44 This is an example of receiving data from the pbind-send-osc.scd
+example;
+#X text 299 272 Now see the console;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 6 0;
+#X connect 4 1 5 0;

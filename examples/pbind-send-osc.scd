@@ -6,6 +6,9 @@ Here's a way to send all of the data from a Pbind to some external source via
 OSC (other software within your computer – like Unity, Processing, Max/MSP, 
 PureData or whatever – or somewhere on the network)
 
+To see an example of how to receive the data from these patterns, open up
+'pbind-send-osc-RECEIVER.pd' in Pure Data and watch the console
+
 */
 (
     // The OSC data is sent to this address and port. 127.0.0.1 is your
