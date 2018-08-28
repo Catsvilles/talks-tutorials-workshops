@@ -53,5 +53,6 @@ have to recompile constantly. This event-based trick is a workaround that makes 
 ## Alternatives to the IDE
 
 [Atom SuperCollider](https://github.com/crucialfelix/atom-supercollider)
+
 [Vim](https://github.com/madskjeldgaard/talks-tutorials-workshops/blob/master/tutorials/scvim/scvim-installation.md)
 
