@@ -9,6 +9,7 @@ guide](http://doc.sccode.org/Browse.html#Streams-Patterns-Events%3EA-Practical-G
 
 There's also [the SuperCollider book published by MIT](https://mitpress.mit.edu/books/supercollider-book), a great handbook for intermediate/advanced SuperCollider coding, in my opinion, but it's not a great starting point for beginners to the language. 
 
+
 ---
 
 ### List of resources
@@ -48,4 +49,9 @@ Events](https://web.archive.org/web/20141008053015/http://www.tmroyal.com/superc
 An annoyance for many when designing object oriented projects in SuperCollider is that you
 have to recompile constantly. This event-based trick is a workaround that makes your code easy to use and nice.
 
+---
+## Alternatives to the IDE
+
+[Atom SuperCollider](https://github.com/crucialfelix/atom-supercollider)
+[Vim](https://github.com/madskjeldgaard/talks-tutorials-workshops/blob/master/tutorials/scvim/scvim-installation.md)
 
