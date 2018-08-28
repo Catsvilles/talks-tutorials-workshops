@@ -12,6 +12,8 @@ But getting SuperCollider and SCVIM (the vim plugin that enables SuperCollider s
 
 This tutorial is for people who are new to VIM or having trouble getting started using SCVIM. Most of what we are going to do here is happening inside of a terminal. On MacOS you can find the standard terminal by searching for `terminal.app`. 
 
+If VIM and/or the command line isn't something for you, another alternative to the SuperCollider IDE is [atom supercollider](https://github.com/crucialfelix/atom-supercollider)
+
 **A general piece of advice:** Don't just install vim plugins or copy-paste other people's .vimrc files when you're starting out. None of that stuff is useful, unless you take the time to learn a bit about each of them and get used to their functions. It doesn't have to be much, but read (some of) the documentation for each and test them out, see if they fit your workflow and help you.
 
 #### Prequisites:
