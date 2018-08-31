@@ -49,6 +49,9 @@ Events](https://web.archive.org/web/20141008053015/http://www.tmroyal.com/superc
 An annoyance for many when designing object oriented projects in SuperCollider is that you
 have to recompile constantly. This event-based trick is a workaround that makes your code easy to use and nice.
 
+## Papers
+[NNdef: Livecoding Digital Musical Instruments in SuperCollider using Functional Reactive Programming](www.friendlyvirus.org/files/Miguel-Negrao-NNdef-FARM-2018.pdf)
+
 ---
 ## Alternatives to the IDE
 
