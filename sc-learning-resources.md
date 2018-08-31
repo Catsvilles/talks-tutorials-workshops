@@ -14,14 +14,24 @@ There's also [the SuperCollider book published by MIT](https://mitpress.mit.edu/
 
 ### List of resources
 
-[A gentle introduction to SuperCollider](https://ccrma.stanford.edu/~ruviaro/texts/A_Gentle_Introduction_To_SuperCollider.pdf)
-
-A great, cohesive and very thorough e-book introducing both SuperCollider and a programmatical way of thinking about music. One of the best ways to get started with SC. 
+#### Video tutorials
 
 [Eli Fieldsteel's video
 tutorials](https://www.youtube.com/watch?v=yRzsOOiJ_p4&list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC)
 
 Great series of YouTube tutorials on a range of subjects. Really informative and pedagogically sound way of learning SuperCollider and Eli is a very knowledgable instructor.
+
+[Michael Bratt's live coding video tutorial](https://youtu.be/0TtxZQUOGGw)
+
+Very nicely paced and explanatory video series about how to livecode in
+SuperCollider.
+
+#### EBooks, papers and written tutorials
+
+[A gentle introduction to SuperCollider](https://ccrma.stanford.edu/~ruviaro/texts/A_Gentle_Introduction_To_SuperCollider.pdf)
+
+A great, cohesive and very thorough e-book introducing both SuperCollider and a programmatical way of thinking about music. One of the best ways to get started with SC. 
+
 
 [Thor Magnussons e-book](https://thormagnusson.gitbooks.io/scoring/content/ ) 
 
@@ -49,7 +59,6 @@ Events](https://web.archive.org/web/20141008053015/http://www.tmroyal.com/superc
 An annoyance for many when designing object oriented projects in SuperCollider is that you
 have to recompile constantly. This event-based trick is a workaround that makes your code easy to use and nice.
 
-## Papers
 [NNdef: Livecoding Digital Musical Instruments in SuperCollider using Functional Reactive Programming](www.friendlyvirus.org/files/Miguel-Negrao-NNdef-FARM-2018.pdf)
 
 ---
