@@ -26,6 +26,10 @@ Great series of YouTube tutorials on a range of subjects. Really informative and
 Very nicely paced and explanatory video series about how to livecode in
 SuperCollider.
 
+[Joseph Anderson: Ambisonic Toolkit for SuperCollider](http://www.ambisonictoolkit.net/documentation/supercollider/tutorials/)
+For the multi channel afficionados this is a series of very exciting talks about
+the Ambisonic Toolkit for SuperCollider (and Reaper now)
+
 #### EBooks, papers and written tutorials
 
 [A gentle introduction to SuperCollider](https://ccrma.stanford.edu/~ruviaro/texts/A_Gentle_Introduction_To_SuperCollider.pdf)
