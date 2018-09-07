@@ -14,6 +14,14 @@ There's also [the SuperCollider book published by MIT](https://mitpress.mit.edu/
 
 ### List of resources
 
+[Searching the SuperCollider mailing list](https://www.listarc.bham.ac.uk/lists/sc-users/search/)
+
+This is the ultimate collection of knowledge on SuperCollider. The very active
+(and very long running) mailing list has answers to almost every supercollider
+question conceivable (and if not, you can quickly get one by posting there).
+
+You can sign up to the mailing list [here (don't forget to turn off your mail's signature when sending the sign up mails)](https://www.birmingham.ac.uk/facilities/ea-studios/research/supercollider/mailinglist.aspx) 
+
 #### Video tutorials
 
 [Eli Fieldsteel's video
@@ -27,6 +35,7 @@ Very nicely paced and explanatory video series about how to livecode in
 SuperCollider.
 
 [Joseph Anderson: Ambisonic Toolkit for SuperCollider](http://www.ambisonictoolkit.net/documentation/supercollider/tutorials/)
+
 For the multi channel afficionados this is a series of very exciting talks about
 the Ambisonic Toolkit for SuperCollider (and Reaper now)
 
