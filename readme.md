@@ -20,4 +20,4 @@ SC = SuperCollider, PD = Pure Data, T = Tidal, MM = Max/MSP
 
 ### Booking
 
-If you want to book me for a talk or a workshop: mail@madskjeldgaard.dk
+If you want to book me for freelance work or a talk or a workshop: mail@madskjeldgaard.dk
