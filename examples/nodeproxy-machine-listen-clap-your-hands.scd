@@ -1,9 +1,11 @@
+s.boot;
+
 (
 // Start proxyspace
 p = ProxySpace.push(s);
 
 // Clap your hands and/or whistle
-~testsignal = {|amp=2| SoundIn.ar() * amp};
+~testsignal = {|amp=4| SoundIn.ar() * amp};
 
 // Trace the amplitude and the RMS value of the signal
 ~amp = { Amplitude.ar(~testsignal)};
@@ -19,8 +21,7 @@ p = ProxySpace.push(s);
 ~pitch = {Tartini.kr(~testsignal)[0]};
 
 // Use the machine listening to trigger an envelope
-~env = {|a=0.5, r=2, c=10, scale=1| EnvGen.kr(Env.perc(a,r,c), timeScale: scale, gate: ~rmscrossing)};
-~env.map(\scale, ~rms);
+~env = {|a=0.5, r=2, c=10, scale=4| EnvGen.kr(Env.perc(a,r,1,c), timeScale: scale, gate: ~rmscrossing)};
 
 // An fm synth to test it out with
 ~fm = {|freq=444, fmi=1.32512, rms, amp, env| 
@@ -35,6 +36,7 @@ p = ProxySpace.push(s);
 ~fm.map(\env, ~env);
 
 ~fm.play;
-)
 
+~rmscrossing.scope;
+)
 
