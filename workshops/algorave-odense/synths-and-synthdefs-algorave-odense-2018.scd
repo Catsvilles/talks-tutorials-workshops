@@ -83,7 +83,6 @@ SynthDef('electrosnare', {
 	// ARGUMENTS
 	arg dur=0.5,
 	freq=50,
-	t_trig=1,
 	amp=1,
 	out=0;
 
@@ -92,12 +91,8 @@ SynthDef('electrosnare', {
 
 	var pitchSlide = 2*freq * env;
 
-	// var sig = SinOsc.ar(freq + pitchSlide) * 0.5 * t_trig;
-
 	// Here's where it gets different: We add some band pass filtered noise to the signal
 	var sig = BPF.ar(WhiteNoise.ar, freq*4, 2);
-
-	sig = sig + (SinOsc.ar(freq + pitchSlide) * t_trig * 5);
 
 	sig = amp * sig * env * 0.5;
 
@@ -121,7 +116,7 @@ Pbind(\instrument, 'electrosnare', \freq, 400, \dur, Pseq([Rest(1.0), 1.0],inf))
 Pbind(\instrument, 'electrosnare', \freq, 1000, \dur, Pseq([Rest(1/4), 1/4],inf) ).play(clock, quant: 1/64);
 
 // Play the kick on every half note beat
-Pbind(\instrument, '808kick', \freq, 40, \dur, 1, \amp, 1 ).play(clock, quant: 1/64);
+Pbind(\instrument, '808kick', \freq, 40, \dur, 1/2, \amp, 1 ).play(clock, quant: 1/64);
 
 // Reuse the kick for a probability based conga rhythm
 Pbind(\instrument, '808kick', \freq, Pwrand([200, 300, 400], [0.25, 0.25, 0.5], inf), \dur, Pwrand([1/2, Rest(1), 1/4], [0.25, 0.25, 0.5], inf), \pan, Pwhite(-1.0, 1.0, inf), \amp, 0.1 ).play(clock, quant: 1/64);
