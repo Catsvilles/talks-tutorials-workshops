@@ -42,8 +42,8 @@ var responder, updateFreq=10, numlfo = 10;
 
 // Play a sine wave lfo outputting it's value to the control bus above
 play{ 
-    var sig = SinOsc.kr((1..10));
-    SendReply.kr(Impulse.kr(updateFreq), '/10lfos/val', sig);
+    var sig = SinOsc.kr((1..numlfo));
+    SendReply.kr(Impulse.kr(updateFreq), '/lfos/val', sig);
 };
 
 // Register a callback function that is called whenever our lfos send their 
@@ -51,5 +51,5 @@ play{
 responder = OSCFunc({|msg, time, addr, port|
     var val = msg[3..];
     n.sendMsg("/yo", *val);
-}, '/10lfos/val');
+}, '/lfos/val');
 )
