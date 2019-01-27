@@ -63,6 +63,13 @@ If everything looks alright, quit SuperCollider and open up a .scd file and test
 
 Then execute `:SCtags`
 
+### Learning VIM
+
+Learning VIM happens in increments over time, not all at once. The best way to
+learn is to simply think out loud while working: "I wonder how I can do X?" and
+then first look for the help file by typing the command `:h X` or simply
+searching for it online.
+
 ### Set up basics in your .vimrc
 
 One of the most fundamental features of VIM is the [.vimrc file](https://dougblack.io/words/a-good-vimrc.html). This is where you remap keys to certain functions, change settings or add features to VIM using vimscript.
@@ -145,6 +152,14 @@ syntax on
 ```
 
 ### Basic VIM movements
+
+If you have installed VIM properly, you should have access to a very nice vim
+tutorial that takes about 30 minutes to complete. On unix systems (Linux and
+MacOS) you can find this by openeing a terminal and executing the
+command `vimtutor`. On Windows it should be in the Program/Vim menu. For more
+info on Vimtutor, execute the following command in Vim: `:h usr_01`.
+
+Let's move on.
 
 A Vim mantra: Waste as little time possible on using the arrow keys.
 
