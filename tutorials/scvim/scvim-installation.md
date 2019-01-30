@@ -16,6 +16,12 @@ If VIM and/or the command line isn't something for you, another alternative to t
 
 **A general piece of advice:** Don't just install vim plugins or copy-paste other people's .vimrc files when you're starting out. None of that stuff is useful, unless you take the time to learn a bit about each of them and get used to their functions. It doesn't have to be much, but read (some of) the documentation for each and test them out, see if they fit your workflow and help you.
 
+### NeoVim
+
+A new exciting development: David Granström has developed a very nice
+SuperCollider integration for [NeoVim](https://neovim.io/).
+It's a very nice alternative to SCVIM: [SCNVim](https://github.com/davidgranstrom/scnvim)
+
 #### Prequisites:
 
 -   [SuperCollider](http://supercollider.github.io/)
