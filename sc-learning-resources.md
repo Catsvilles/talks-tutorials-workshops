@@ -77,6 +77,7 @@ have to recompile constantly. This event-based trick is a workaround that makes 
 [NNdef: Livecoding Digital Musical Instruments in SuperCollider using Functional Reactive Programming](http://www.friendlyvirus.org/files/Miguel-Negrao-NNdef-FARM-2018.pdf)
 
 [SuperCollider interviews](http://scinterviews.com/)
+
 ---
 
 ## Alternatives to the IDE
