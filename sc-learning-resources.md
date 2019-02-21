@@ -47,7 +47,7 @@ SuperCollider, also contains a good [ Arduino tutorial showing how to use microc
 
 [A gentle introduction to SuperCollider](https://ccrma.stanford.edu/~ruviaro/texts/A_Gentle_Introduction_To_SuperCollider.pdf)
 
-A great, cohesive and very thorough e-book introducing both SuperCollider and a programmatical way of thinking about music. One of the best ways to get started with SC.
+This is my favourite introduction to SuperCollider at the moment. A great, cohesive and very thorough e-book introducing both SuperCollider and a programmatical way of thinking about music. One of the best ways to get started with SC.
 
 [Thor Magnussons e-book](https://thormagnusson.gitbooks.io/scoring/content/)
 
